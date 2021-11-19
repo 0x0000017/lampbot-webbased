@@ -5,13 +5,95 @@
       "patterns": [
         "Hi",
         "Hey",
+        "Help",
         "How are you",
         "Is anyone there?",
         "Hello",
         "Good day"
       ],
       "responses": [
-        "Hi there, I'm LAMPBot !.Chatbot for GC-LAMP. How can I help you ?"
+        "Hello, this is LAMPbot. How may I help you?"
+      ]
+    },
+    {
+      "tag": "address",
+      "patterns": [
+        "What email address should I use to log-in?",
+        "What email address should I use to sign-in?",
+        "What is my email address?",
+        "What email should I use?",
+        "What is my email?"
+      ],
+      "responses": [
+        "The email address that you should use is your GC DOMAIN email with the format school_id_number@gordoncollege.edu.ph"
+      ]
+    },
+    {
+      "tag": "forgot password",
+      "patterns": [
+        "I forgot my password.",
+        "I can’t remember my password.",
+        "What is my password?",
+        "Password can't remember."
+      ],
+      "responses": [
+        "You can click ‘Click Here’ beside the question ‘Forgot Password?’ under the LOGIN button then proceed with the process.’"
+      ]
+    },
+    {
+      "tag": "profile",
+      "patterns": [
+        "Can I update my profile?",
+        "Is it possible to update my profile?’",
+        "I want to know if I can update my profile?",
+        "Can I change my profile?",
+        "Is it possible to change my profile?",
+        "I want to know if I can change my profile.",
+        "I want to change details in my profile.",
+        "How can I change my profile?’",
+        "change profile"
+      ],
+      "responses": [
+        "You can update your profile by clicking on your picture on the upper left side, it will then show a button “Update Profile” under your School Program. Click Update Profile to update your profile."
+      ]
+    },
+    {
+      "tag": "update password",
+      "patterns": [
+        "Can I update my password?",
+        "Is it possible to update my password?",
+        "I want to know if I can update my password.",
+        "Can I change my password?",
+        "Is it possible to change my password?",
+        "I want to know if I can change my password",
+        "How can I update my password?",
+        "I want to update my password.",
+        "I want to change my password.",
+        "How can I change my password?",
+        "change password",
+        "password update"
+      ],
+      "responses": [
+        "You can click ‘Click Here’ beside the question ‘Forgot Password?’ under the LOGIN button then proceed with the process.’"
+      ]
+    },
+    {
+      "tag": "class",
+      "patterns": ["What is my class today?"],
+      "responses": [
+        "If you want to know if you have classes today, then look at the uppermost right, there you can see the Date, then go to Classes and click the button on the upper right that says ‘Class Schedule’ with a calendar icon to check your schedule."
+      ]
+    },
+    {
+      "tag": "schedule",
+      "patterns": [
+        "Can I view the schedule?",
+        "Can I see the schedule?",
+        "Where is my schedule?",
+        "schedule"
+      ],
+      "responses": [
+        "You can view your schedule, just go to Classes and click the button on the upper right that says ‘Class Schedule’ with a calendar icon."
       ]
     },
     {
@@ -27,43 +109,6 @@
       "tag": "thanks",
       "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
       "responses": ["Happy to help!", "Any time!", "My pleasure"]
-    },
-    {
-      "tag": "items",
-      "patterns": [
-        "Which items do you have?",
-        "What kinds of items are there?",
-        "What do you sell?"
-      ],
-      "responses": [
-        "We sell coffee and tea",
-        "We have coffee and tea"
-      ]
-    },
-    {
-      "tag": "payments",
-      "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with Paypal?",
-        "Are you cash only?"
-      ],
-      "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
-      ]
-    },
-    {
-      "tag": "delivery",
-      "patterns": [
-        "How long does delivery take?",
-        "How long does shipping take?",
-        "When do I get my delivery?"
-      ],
-      "responses": [
-        "Delivery takes 2-4 days",
-        "Shipping takes 2-4 days"
-      ]
     },
     {
       "tag": "funny",
