@@ -97,6 +97,55 @@
       ]
     },
     {
+      "tag": "address",
+      "patterns": [
+        "Where is Gordon College located ?",
+        "Where is Gordon College ?",
+        "What is the college address ?",
+        "What is the school address ?",
+        "school location",
+        "college location"
+      ],
+      "responses": [
+        "Gordon College is located in Olongapo City Sports Complex, Gordon College, Philippines"
+      ]
+    },
+    {
+      "tag": "info",
+      "patterns": [
+        "Can you give me information about Gordon College ?",
+        "Can you give me infos about Gordon College?"
+      ],
+      "responses": [
+        "Gordon College, formerly known as Olongapo City Colleges, is a public educational institution established in 1999. The school is supervised by the City Government of Olongapo. The said college started out as a training center that helps workers in developing skills necessary for employment at the former United States Naval Base. When the facility closed down, it was later converted into a degree-granting institution. "
+      ]
+    },
+    {
+      "tag": "offers",
+      "patterns": [
+        "What programs does Gordon College offer ?",
+        "Courses offered",
+        "programs offered"
+      ],
+      "responses": [
+        "Gordon College offers tertiary level programs. Degrees in the fields of Education, Nursing, Customs Administration, Accountancy, and Communication are open to students who are interested to pursue their education in the institution. Another offering is a senior high school program that features academic, arts and design, and technical-vocational-livelihood (TVL) strands"
+      ]
+    },
+    {
+      "tag": "foundation day",
+      "patterns": [
+        "When is the foundation day ?",
+        "foundation day"
+      ],
+      "responses": [
+        "It is held on February 24 yearly."
+      ]
+
+    },
+
+
+
+    {
       "tag": "goodbye",
       "patterns": ["Bye", "See you later", "Goodbye"],
       "responses": [
@@ -107,13 +156,13 @@
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!", "Salamat !", "Maraming Salamat !"],
       "responses": ["Happy to help!", "Any time!", "My pleasure"]
     },
     {
       "tag": "funny",
       "patterns": [
-        "Tell me a joke!",
+        "Tell me joke!",
         "Tell me something funny!",
         "Do you know a joke?"
       ],

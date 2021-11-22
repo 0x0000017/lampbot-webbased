@@ -3,6 +3,7 @@
 from flask import Flask, render_template, request, jsonify
 from flask_cors	import CORS
 from chat import get_response
+# import dbconnect
 
 app = Flask(__name__)
 CORS(app)
@@ -17,4 +18,4 @@ def predict():
 	return jsonify(message)
 	
 if __name__ == "__main__":
-	app.run(debug=True)
+	app.run(debug=False)
