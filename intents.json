@@ -16,7 +16,7 @@
       ]
     },
     {
-      "tag": "address",
+      "tag": "email",
       "patterns": [
         "What email address should I use to log-in?",
         "What email address should I use to sign-in?",
@@ -74,7 +74,7 @@
         "password update"
       ],
       "responses": [
-        "You can click ‘Click Here’ beside the question ‘Forgot Password?’ under the LOGIN button then proceed with the process.’"
+        "You can click ‘Click Here’ beside the question ‘Forgot Password?’ under the LOGIN button then proceed with the process."
       ]
     },
     {
@@ -97,7 +97,7 @@
       ]
     },
     {
-      "tag": "address",
+      "tag": "location",
       "patterns": [
         "Where is Gordon College located ?",
         "Where is Gordon College ?",
@@ -160,15 +160,138 @@
       "responses": ["Happy to help!", "Any time!", "My pleasure"]
     },
     {
-      "tag": "funny",
+      "tag": "contact_president",
       "patterns": [
-        "Tell me joke!",
-        "Tell me something funny!",
-        "Do you know a joke?"
+        "What is the email address of the College President ?"
       ],
       "responses": [
-        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
+        "Office of the College President: info@gordoncollege.edu.ph"
+      ]
+    },
+    {
+      "tag": "contact_registrar",
+      "patterns": [
+        "What is the email address of the Registrar?"
+      ],
+      "responses": [
+        "Registrar's Office:  registrar@gordoncollege.edu.ph"
+      ]
+    },
+    {
+      "tag": "contact_document_request",
+      "patterns": [
+        "Where should I request documents ?",
+        "What is the email address for document requests?"
+      ],
+      "responses": [
+        "For Document Requests: gctranscripts@gordoncollege.edu.ph"
+      ]
+    },
+    {
+      "tag": "contact_finance",
+      "patterns": [
+        "Where should I contact GCPay ?",
+        "What is the email address for finance requests?"
+      ],
+      "responses": [
+        "Finance Unit: gcpay@gordoncollege.edu.ph h"
+      ]
+    },
+    {
+      "tag": "contact_graduate",
+      "patterns": [
+        "Where should I contact Institute of Graduate Studies ?"
+      ],
+      "responses": [
+        "Institute of Graduate Studies: anicas.roel@gordoncollege.edu.ph"
+      ]
+    },
+    {
+      "tag": "contact_senior_high",
+      "patterns": [
+        "What is our senior high department email ?"
+      ],
+      "responses": [
+        "Senior High School Department: info.shs@gordoncollege.edu.ph"
+      ]
+    },
+    {
+      "tag": "contact_allied_health_studies",
+      "patterns": [
+        "CAHS",
+        "what is the email address of dean of CAHS ?"
+      ],
+      "responses": [
+        "College of Allied Health Studies: dean.cahs@gordoncollege.edu.ph"
+      ]
+    },
+    {
+      "tag": "contact_business_and_accountancy",
+      "patterns": [
+        "CBA",
+        "CBA dean email",
+        "what is the email address of dean of CBA ?"
+      ],
+      "responses": [
+        "College of Business and Accountancy: dean.cba@gordoncollege.edu.ph"
+      ]
+    },
+    {
+      "tag": "contact_computer_studies",
+      "patterns": [
+        "CCS",
+        "what is the email address of dean of ccs ?",
+        "BSCS",
+        "BSIT",
+        "ACT"
+      ],
+      "responses": [
+        "College of Computer Studies: dean.ccs@gordoncollege.edu.ph"
+      ]
+    },
+    {
+      "tag": "contact_education_arts_sciences",
+      "patterns": [
+        "CEAS",
+        "what is the email address of dean of CEAS ?"
+      ],
+      "responses": [
+        "College of Education, Arts and Sciences: dean.ceas@gordoncollege.edu.ph"
+      ]
+    },
+    {
+      "tag": "contact_hospitality_tourism_management",
+      "patterns": [
+        "CHTM",
+        "what is the email address of dean of CHTM ?"
+      ],
+      "responses": [
+        "College of Hospitality and Tourism Management: dean.chtm@gordoncollege.edu.ph"
+      ]
+    },
+    {
+      "tag" : "lamp_status",
+      "patterns" : [
+        "Is the GC-LAMP down ?",
+        "Is the GC-LAMP up?",
+        "I can't access GC-LAMP. Is it down?",
+        "Is it down?",
+        "Is it up?",
+        "Is GC-LAMP accessible ?"
+      ],
+      "responses": [
+        "The GC-LAMP is"
+      ]
+    },
+    {
+      "tag" :"useful_links",
+      "patterns":[
+        "Can you send some useful links ?",
+        "Can you provide some useful links ?",
+        "Can you send GC-related links?"
+      ],
+      "responses":[
+        "Useful links: "
       ]
     }
   ]

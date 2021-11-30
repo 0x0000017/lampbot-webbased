@@ -2,11 +2,20 @@
 
 import random
 import json
-
 import torch
+from hostChecker import lamphost
 
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
+
+def hostcheck():
+	status = lamphost("lamp.gordoncollege.edu.ph")
+	if status == 1:
+		isHostUp = " up and running !."
+		return isHostUp
+	else:
+		isHostUp = " currently down at the moment."
+		return isHostUp
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -45,10 +54,12 @@ def get_response(msg):
     if prob.item() > 0.75:
         for intent in intents['intents']:
             if tag == intent["tag"]:
+                if tag == "lamp_status":
+                    hostcheck()
+                    return intent['responses']+[hostcheck()]
                 return random.choice(intent['responses'])
     
-    return "I do not understand..."
-
+    return "I don't quite understand. Did you mean ?"
 
 if __name__ == "__main__":
     print("Let's chat! (type 'quit' to exit)")
@@ -59,4 +70,3 @@ if __name__ == "__main__":
 
         resp = get_response(sentence)
         print(resp)
-

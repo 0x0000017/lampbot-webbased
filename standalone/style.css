@@ -13,8 +13,8 @@ body {
 }
 
 *, html {
-    --primaryGradient: linear-gradient(93.12deg, #0166B3 0.52%, #0fdb32 100%);
-    --secondaryGradient: linear-gradient(268.91deg, #0166B3 -2.14%, #0fdb32 99.69%);
+    --primaryGradient: linear-gradient(93.12deg, #0166B3 0.52%, #0a5b99 100%);
+    --secondaryGradient: linear-gradient(268.91deg, #0166B3 -2.14%, #0a5b99 99.69%);
     --primaryBoxShadow: 1px 10px 15px rgba(0, 0, 0, 0.1);
     --secondaryBoxShadow: 1px -10px 15px rgba(0, 0, 0, 0.1);
     --primary: #581B98;
@@ -54,12 +54,15 @@ body {
 }
 
 .send__button {
-    padding: 6px;
-    background: transparent;
-    border: none;
+    padding: 10px 10px;
+    width: 15%;
+    background: #00FF7F;
+    border: solid;
+    border-radius: 25px;
     outline: none;
     cursor: pointer;
 }
+
 
 
 /* HEADER */
@@ -78,7 +81,6 @@ body {
 }
 
 .messages__item {
-    background: orange;
     max-width: 60.6%;
     width: fit-content;
 }
@@ -98,9 +100,9 @@ body {
 }
 
 .chatbox__support {
-    background: #8b998e;
-    height: 500px;
-    width: 450px;
+    background: #CCE0F0;
+    height: 800px;
+    width: 500px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -112,7 +114,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+
     padding: 15px 20px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -140,7 +142,7 @@ body {
 
 .messages__item {
     margin-top: 10px;
-    background: #E0E0E0;
+    background: #ffffff;
     padding: 8px 12px;
     max-width: 100%;
 }
@@ -198,4 +200,47 @@ body {
     border-bottom-left-radius: 50px;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+}
+
+.chatbox__suggestions {
+    background-color: #CCE0F0;
+    display: flex;
+}
+.sgst1__btn {
+    padding: 6px;
+    border:dotted 2px #41403E;
+    border-radius: 25px;
+    outline: olive;
+    cursor:pointer
+}
+.sgst2__btn {
+    padding: 6px;
+    border:dotted 2px #41403E;
+    border-radius: 25px;
+    outline: olive;
+    cursor:pointer
+}
+.sgst3__btn {
+    padding: 6px;
+    border:dotted 2px #41403E;
+    border-radius: 25px;
+    outline: olive;
+    cursor:pointer
+}
+hr {
+    clear: both;
+    visibility: hidden;
+}
+.linx{
+    font: bold 25px Arial;
+    padding: 25px;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    border-radius: 25px;
 }
