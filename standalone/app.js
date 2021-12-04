@@ -169,14 +169,29 @@ class Chatbox {
         this.messages.slice().reverse().forEach(function(item, index) {
             if (item.name === "LAMPBot")
             {
-              if (item.message.includes("Password")) {
-                html += '<div class="messages__item messages__item--visitor"><img src = "images/placeholder.PNG"><hr><br></div>'                
-              } else if (item.message.includes("schedule")) {
-                html += '<div class="messages__item messages__item--visitor"><img src = "images/placeholder.PNG"><hr><br></div>'
-              } else if (item.message.includes("profile")) {
-                html += '<div class="messages__item messages__item--visitor"><img src = "images/placeholder.PNG"><hr><br></div>'
-              } else if (item.message.includes("links")) {
+              if (item.message.includes("profile")) {
+                html += '<div class="messages__item messages__item--visitor">A form will be shown, and edit it to your liking.<br><img src = "images/inst/profile/3rd.PNG"><hr><br></div>'
+                html += '<div class="messages__item messages__item--visitor">Click the "Update Profile" button.<br><img src = "images/inst/profile/2nd.PNG"><hr><br></div>'
+                html += '<div class="messages__item messages__item--visitor">After logging in to the LAMP, <br>press the 3-dot-menu on the upper left, then click your profile picture.<br><img src = "images/inst/profile/1st.PNG"><hr><br></div>'
+                console.log("profile");
+              } 
+              else if (item.message.includes("links")) {
                 html += '<div class="messages__item messages__item--visitor"><a href="https://facebook.com" class="linx">wkwkwkwk</a><hr><br><a href="https://facebook.com" class="linx">wkwkwkwk</a><hr><br><a href ="https://facebook.com" class="linx">wkwkwkwk</a><hr><hr><br></div>'
+                console.log("links");
+              }
+              else if (item.message.includes("Generated")) {
+                html += '<div class="messages__item messages__item--visitor">Hmmm, remembering that generated password is hard. You will be directed to change your password. Don\'t make it too easy to be secured, but also don\'t make it too hard for you to forget ;).<hr><br></div>'
+                html += '<div class="messages__item messages__item--visitor"> Try using that generated password in your log in! It works right?<hr><br></div>'
+                html += '<div class="messages__item messages__item--visitor"> Your generated password would pop-up. Be sure to copy that!<img src = "images/inst/pw/generated-pass.png"><hr><br></div>'
+                html += '<div class="messages__item messages__item--visitor"> You will be directed to a form that you will need to fill-in. Read the instructions carefully<img src = "images/inst/pw/form-forgot.png"><hr><br></div>'
+                html += '<div class="messages__item messages__item--visitor">Click the "Click Here" link under the LOGIN button.<img src = "images/inst/pw/forgot-clickhere.png"><hr><br></div>' 
+                console.log("password");
+              }
+              else if (item.message.includes("If you want to change password")) {
+                html += '<div class="messages__item messages__item--visitor">After that, a form will pop up. Fill it in. Goodluck!.<br><img src = "images/inst/pw/change-pass.png"><hr><br></div>' 
+                html += '<div class="messages__item messages__item--visitor">Then, you\'ll be directed to view your personal information. There, you will see two buttons available, click Change password.<br><img src = "images/inst/pw/changepass_button.png"><hr><br></div>' 
+                html += '<div class="messages__item messages__item--visitor">See your profile picture on the upper left corner? Click it.<br><img src = "images/inst/pw/1st.png"><hr><br></div>' 
+                console.log("change password");
               }
                 html += '<div class="messages__item messages__item--visitor">' + item.message + '</div><br><hr>'
             }
@@ -191,7 +206,5 @@ class Chatbox {
         chatmessage.innerHTML = html;
     }
 }
-
-
 const chatbox = new Chatbox();
 chatbox.display();

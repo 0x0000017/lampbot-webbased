@@ -29,18 +29,6 @@
       ]
     },
     {
-      "tag": "forgot password",
-      "patterns": [
-        "I forgot my password.",
-        "I can’t remember my password.",
-        "What is my password?",
-        "Password can't remember."
-      ],
-      "responses": [
-        "You can click ‘Click Here’ beside the question ‘Forgot Password?’ under the LOGIN button then proceed with the process.’"
-      ]
-    },
-    {
       "tag": "profile",
       "patterns": [
         "Can I update my profile?",
@@ -54,11 +42,23 @@
         "change profile"
       ],
       "responses": [
-        "You can update your profile by clicking on your picture on the upper left side, it will then show a button “Update Profile” under your School Program. Click Update Profile to update your profile."
+        "You can update your profile by doing this:"
       ]
     },
     {
-      "tag": "update password",
+      "tag": "forgot_password",
+      "patterns": [
+        "I forgot my password. How can I change it ?",
+        "I can’t remember my password.",
+        "How can I reset my forgotten password",
+        "Password can't remember."
+      ],
+      "responses": [
+        "Can't remember/forgot your password? Worry no more, you can still access your account. We will give you a New Generated Password for you to use to change your password. Here are the steps."
+      ]
+    },
+    {
+      "tag": "change_password",
       "patterns": [
         "Can I update my password?",
         "Is it possible to update my password?",
@@ -74,9 +74,9 @@
         "password update"
       ],
       "responses": [
-        "You can click ‘Click Here’ beside the question ‘Forgot Password?’ under the LOGIN button then proceed with the process."
+        "If you want to change password, be sure to log-in first."
       ]
-    },
+    },   
     {
       "tag": "class",
       "patterns": ["What is my class today?"],
