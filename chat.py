@@ -3,14 +3,16 @@
 import random
 import json
 import torch
+from datetime import datetime
 from hostChecker import lamphost
-
+from dbconnect import doQuery
+from pathlib import Path
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 
 def hostcheck():
 	status = lamphost("lamp.gordoncollege.edu.ph")
-	if status == 1:
+	if status == True:
 		isHostUp = " up and running !."
 		return isHostUp
 	else:
@@ -38,6 +40,7 @@ model.eval()
 
 bot_name = "LAMPBot"
 
+
 def get_response(msg):
     sentence = tokenize(msg)
     X = bag_of_words(sentence, all_words)
@@ -58,8 +61,13 @@ def get_response(msg):
                     hostcheck()
                     return intent['responses']+[hostcheck()]
                 return random.choice(intent['responses'])
-    
-    return "I don't quite understand. Did you mean ?"
+
+    dateNow = datetime.date(datetime.now())
+    logVals = (msg, dateNow)
+    doQuery(logVals)
+
+    return "I don't quite understand, but don't worry -- it will be added next time ! :) "
+
 
 if __name__ == "__main__":
     print("Let's chat! (type 'quit' to exit)")

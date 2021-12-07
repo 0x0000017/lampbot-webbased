@@ -7,3 +7,6 @@ def lamphost(host):
 		return False
 	else:
 		return True
+
+status = lamphost("www.google.com.ph")
+print(status)

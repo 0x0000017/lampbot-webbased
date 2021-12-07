@@ -25,7 +25,6 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
     font-size: 100%;
-    background-image: url("images/bg.png");
 	background-repeat: no-repeat;
 }
 
@@ -250,7 +249,7 @@ hr {
     visibility: hidden;
 }
 .linx{
-    font: bold 25px Arial;
+    font: regular 25px Arial;
     padding: 25px;
     text-decoration: none;
     background-color: #EEEEEE;

@@ -1,15 +1,16 @@
 {
   "intents": [
     {
-      "tag": "greeting",
+      "tag": "greetings",
       "patterns": [
         "Hi",
         "Hey",
         "Help",
         "How are you",
-        "Is anyone there?",
+        "Is anyone there",
         "Hello",
-        "Good day"
+        "Good day",
+        "Kamusta ka"
       ],
       "responses": [
         "Hello, this is LAMPbot. How may I help you?"
@@ -18,11 +19,11 @@
     {
       "tag": "email",
       "patterns": [
-        "What email address should I use to log-in?",
-        "What email address should I use to sign-in?",
-        "What is my email address?",
-        "What email should I use?",
-        "What is my email?"
+        "What email address should I use to log-in",
+        "What email address should I use to sign-in",
+        "What is my email address",
+        "What email should I use",
+        "What is my email"
       ],
       "responses": [
         "The email address that you should use is your GC DOMAIN email with the format school_id_number@gordoncollege.edu.ph"
@@ -31,14 +32,14 @@
     {
       "tag": "profile",
       "patterns": [
-        "Can I update my profile?",
-        "Is it possible to update my profile?’",
-        "I want to know if I can update my profile?",
-        "Can I change my profile?",
-        "Is it possible to change my profile?",
+        "Can I update my profile",
+        "Is it possible to update my profile’",
+        "I want to know if I can update my profile",
+        "Can I change my profile",
+        "Is it possible to change my profile",
         "I want to know if I can change my profile.",
         "I want to change details in my profile.",
-        "How can I change my profile?’",
+        "How can I change my profile’",
         "change profile"
       ],
       "responses": [
@@ -48,7 +49,7 @@
     {
       "tag": "forgot_password",
       "patterns": [
-        "I forgot my password. How can I change it ?",
+        "I forgot my password. How can I change it ",
         "I can’t remember my password.",
         "How can I reset my forgotten password",
         "Password can't remember."
@@ -60,16 +61,16 @@
     {
       "tag": "change_password",
       "patterns": [
-        "Can I update my password?",
-        "Is it possible to update my password?",
+        "Can I update my password",
+        "Is it possible to update my password",
         "I want to know if I can update my password.",
-        "Can I change my password?",
-        "Is it possible to change my password?",
+        "Can I change my password",
+        "Is it possible to change my password",
         "I want to know if I can change my password",
-        "How can I update my password?",
-        "I want to update my password.",
-        "I want to change my password.",
-        "How can I change my password?",
+        "How can I update my password",
+        "I want to update my password",
+        "I want to change my password",
+        "How can I change my password",
         "change password",
         "password update"
       ],
@@ -79,7 +80,9 @@
     },   
     {
       "tag": "class",
-      "patterns": ["What is my class today?"],
+      "patterns": [
+        "What is my class today", 
+        "Do I have a class today", "Is there classes"],
       "responses": [
         "If you want to know if you have classes today, then look at the uppermost right, there you can see the Date, then go to Classes and click the button on the upper right that says ‘Class Schedule’ with a calendar icon to check your schedule."
       ]
@@ -87,22 +90,22 @@
     {
       "tag": "schedule",
       "patterns": [
-        "Can I view the schedule?",
-        "Can I see the schedule?",
-        "Where is my schedule?",
+        "Can I view the schedule",
+        "Can I see the schedule",
+        "What is my schedule",
         "schedule"
       ],
       "responses": [
-        "You can view your schedule, just go to Classes and click the button on the upper right that says ‘Class Schedule’ with a calendar icon."
+        "You can view your schedule by following this:"
       ]
     },
     {
       "tag": "location",
       "patterns": [
-        "Where is Gordon College located ?",
-        "Where is Gordon College ?",
-        "What is the college address ?",
-        "What is the school address ?",
+        "Where is Gordon College located ",
+        "Where is Gordon College ",
+        "What is the college address ",
+        "What is the school address ",
         "school location",
         "college location"
       ],
@@ -113,8 +116,8 @@
     {
       "tag": "info",
       "patterns": [
-        "Can you give me information about Gordon College ?",
-        "Can you give me infos about Gordon College?"
+        "Can you give me information about Gordon College ",
+        "Can you give me infos about Gordon College"
       ],
       "responses": [
         "Gordon College, formerly known as Olongapo City Colleges, is a public educational institution established in 1999. The school is supervised by the City Government of Olongapo. The said college started out as a training center that helps workers in developing skills necessary for employment at the former United States Naval Base. When the facility closed down, it was later converted into a degree-granting institution. "
@@ -123,7 +126,7 @@
     {
       "tag": "offers",
       "patterns": [
-        "What programs does Gordon College offer ?",
+        "What programs does Gordon College offer ",
         "Courses offered",
         "programs offered"
       ],
@@ -134,7 +137,7 @@
     {
       "tag": "foundation day",
       "patterns": [
-        "When is the foundation day ?",
+        "When is the foundation day ",
         "foundation day"
       ],
       "responses": [
@@ -142,9 +145,6 @@
       ]
 
     },
-
-
-
     {
       "tag": "goodbye",
       "patterns": ["Bye", "See you later", "Goodbye"],
@@ -160,124 +160,14 @@
       "responses": ["Happy to help!", "Any time!", "My pleasure"]
     },
     {
-      "tag": "contact_president",
-      "patterns": [
-        "What is the email address of the College President ?"
-      ],
-      "responses": [
-        "Office of the College President: info@gordoncollege.edu.ph"
-      ]
-    },
-    {
-      "tag": "contact_registrar",
-      "patterns": [
-        "What is the email address of the Registrar?"
-      ],
-      "responses": [
-        "Registrar's Office:  registrar@gordoncollege.edu.ph"
-      ]
-    },
-    {
-      "tag": "contact_document_request",
-      "patterns": [
-        "Where should I request documents ?",
-        "What is the email address for document requests?"
-      ],
-      "responses": [
-        "For Document Requests: gctranscripts@gordoncollege.edu.ph"
-      ]
-    },
-    {
-      "tag": "contact_finance",
-      "patterns": [
-        "Where should I contact GCPay ?",
-        "What is the email address for finance requests?"
-      ],
-      "responses": [
-        "Finance Unit: gcpay@gordoncollege.edu.ph h"
-      ]
-    },
-    {
-      "tag": "contact_graduate",
-      "patterns": [
-        "Where should I contact Institute of Graduate Studies ?"
-      ],
-      "responses": [
-        "Institute of Graduate Studies: anicas.roel@gordoncollege.edu.ph"
-      ]
-    },
-    {
-      "tag": "contact_senior_high",
-      "patterns": [
-        "What is our senior high department email ?"
-      ],
-      "responses": [
-        "Senior High School Department: info.shs@gordoncollege.edu.ph"
-      ]
-    },
-    {
-      "tag": "contact_allied_health_studies",
-      "patterns": [
-        "CAHS",
-        "what is the email address of dean of CAHS ?"
-      ],
-      "responses": [
-        "College of Allied Health Studies: dean.cahs@gordoncollege.edu.ph"
-      ]
-    },
-    {
-      "tag": "contact_business_and_accountancy",
-      "patterns": [
-        "CBA",
-        "CBA dean email",
-        "what is the email address of dean of CBA ?"
-      ],
-      "responses": [
-        "College of Business and Accountancy: dean.cba@gordoncollege.edu.ph"
-      ]
-    },
-    {
-      "tag": "contact_computer_studies",
-      "patterns": [
-        "CCS",
-        "what is the email address of dean of ccs ?",
-        "BSCS",
-        "BSIT",
-        "ACT"
-      ],
-      "responses": [
-        "College of Computer Studies: dean.ccs@gordoncollege.edu.ph"
-      ]
-    },
-    {
-      "tag": "contact_education_arts_sciences",
-      "patterns": [
-        "CEAS",
-        "what is the email address of dean of CEAS ?"
-      ],
-      "responses": [
-        "College of Education, Arts and Sciences: dean.ceas@gordoncollege.edu.ph"
-      ]
-    },
-    {
-      "tag": "contact_hospitality_tourism_management",
-      "patterns": [
-        "CHTM",
-        "what is the email address of dean of CHTM ?"
-      ],
-      "responses": [
-        "College of Hospitality and Tourism Management: dean.chtm@gordoncollege.edu.ph"
-      ]
-    },
-    {
       "tag" : "lamp_status",
       "patterns" : [
-        "Is the GC-LAMP down ?",
-        "Is the GC-LAMP up?",
-        "I can't access GC-LAMP. Is it down?",
-        "Is it down?",
-        "Is it up?",
-        "Is GC-LAMP accessible ?"
+        "Is the GC-LAMP down ",
+        "Is the GC-LAMP up",
+        "I can't access GC-LAMP. Is it down",
+        "Is it down",
+        "Is it up",
+        "Is GC-LAMP accessible "
       ],
       "responses": [
         "The GC-LAMP is"
@@ -286,9 +176,9 @@
     {
       "tag" :"useful_links",
       "patterns":[
-        "Can you send some useful links ?",
-        "Can you provide some useful links ?",
-        "Can you send GC-related links?"
+        "Can you send some useful links ",
+        "Can you provide some useful links ",
+        "Can you send GC-related links"
       ],
       "responses":[
         "Useful links: "
