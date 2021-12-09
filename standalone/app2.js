@@ -1,7 +1,6 @@
 class Chatbox {
     constructor() {
         this.args = {
-            openButton: document.querySelector('.chatbox__button'),
             chatBox: document.querySelector('.chatbox__support'),
             sendButton: document.querySelector('.send__button'),
             sgst1: document.querySelector('.sgst1__btn'),
@@ -16,13 +15,12 @@ class Chatbox {
 
     display() {
         const {openButton, chatBox, sendButton, sgst1, sgst2, sgst3, sgst4} = this.args;
-
-        openButton.addEventListener('click', () => this.toggleState(chatBox))
         sendButton.addEventListener('click', () => this.onSendButton(chatBox))
         sgst1.addEventListener('click', () => this.onSgst1Button(chatBox))
         sgst2.addEventListener('click', () => this.onSgst2Button(chatBox))
         sgst3.addEventListener('click', () => this.onSgst3Button(chatBox))
         sgst4.addEventListener('click', () => this.onSgst4Button(chatBox))
+        this.state = !this.state;
 
         const node = chatBox.querySelector('input');
         node.addEventListener("keyup", ({key}) => {
@@ -30,17 +28,6 @@ class Chatbox {
                 this.onSendButton(chatBox)
             }
         })
-    }
-
-    toggleState(chatbox) {
-        this.state = !this.state;
-
-        // show or hides the box
-        if(this.state) {
-            chatbox.classList.add('chatbox--active')
-        } else {
-            chatbox.classList.remove('chatbox--active')
-        }
     }
 
     onSendButton(chatbox) {

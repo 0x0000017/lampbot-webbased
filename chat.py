@@ -4,20 +4,13 @@ import random
 import json
 import torch
 from datetime import datetime
-from hostChecker import lamphost
-from dbconnect import doQuery
 from pathlib import Path
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 
-def hostcheck():
-	status = lamphost("lamp.gordoncollege.edu.ph")
-	if status == True:
-		isHostUp = " up and running !."
-		return isHostUp
-	else:
-		isHostUp = " currently down at the moment."
-		return isHostUp
+from additional_functions import lamphost
+from additional_functions import doQuery
+from additional_functions import hostcheck
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 

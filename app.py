@@ -4,7 +4,7 @@ from os import stat
 from flask import Flask, render_template, request, jsonify
 from flask_cors	import CORS
 from chat import get_response
-from hostChecker import lamphost
+from additional_functions import lamphost
 
 # import dbconnect
 
