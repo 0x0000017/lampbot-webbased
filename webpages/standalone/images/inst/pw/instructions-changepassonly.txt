@@ -1,0 +1,10 @@
+If you want to change password, be sure to log-in first.
+
+See your profile picture on the upper left corner? Click it.
+//insert 1st.png
+
+Then, you'll be directed to view your personal information. There, you will see two buttons available, click Change password.
+//insert changepass_button.png
+
+After that, a form will pop up. Fill it in. Goodluck!
+//insert change pass.png

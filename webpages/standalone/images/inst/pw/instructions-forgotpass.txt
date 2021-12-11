@@ -1,0 +1,15 @@
+Did you forget your password? Don't worry, you can still access your account. We will give you a new generated password for you to use to change your password. Here are the steps:
+
+1. Click the "Click Here" link under the 'LOGIN' button.
+//insert forgot-clickhere.png
+
+2. You will be directed to a form that you will need to fill-in. Read the instructions carefully
+//insert form forgot.png
+
+3. Your generated password would pop-up. Be sure to copy that!
+//insert generated pass.png
+
+4. Try using that generated password in your log in! It works right?
+
+5. Hmmm, remembering that generated password is hard. You will be directed to change your password. Don't make it too easy to be secured, but also don't make it too hard for you to forget ;).
+//insert changepassaftforgot.png   
