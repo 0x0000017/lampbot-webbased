@@ -57,14 +57,13 @@
 				var aResp = document.getElementById	("addResponse").value;
 				console.log(aResp)
 
-
 				var addNewRes = {
 					"tag" : aTag,
 					"patterns": aQuery,
 					"responses": aResp
 				}
 				$.ajax({
-					url: "http://127.0.0.1/uploadq",
+					url: "http://127.0.0.1:5000/uploadq",
 					type: "POST",
 					contentType: "application/json",
 					data: JSON.stringify(addNewRes),
