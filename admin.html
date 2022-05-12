@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport"
 			  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="templates/style.css">
 		<title>LAMPBot Panel</title>
 	</head>
 	<body>
@@ -43,15 +43,21 @@
 						<br><br><br>
 					
 						<input type ="submit" value ="Submit" onclick="pushVal()"></button>
-						<button id ="genrep" >Get unknown responses</button>
+						<button type ="button" id ="script" name ="genrep" onclick="generateRep()" 
+						style ="
+						background-color: #33ccff;
+						color: white;
+						border-radius: 20px;
+						padding: 15px 32px;
+						text-align: center;
+						text-decoration: none;
+						font-size: 16px;">Unknown Responses</button>
 					</form>
 				</div>
 			</div>
 			<div class = "right"></div>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/brython@3.8.10/brython.min.js"> </script> 
-		<script src="https://cdn.jsdelivr.net/npm/brython@3.8.10/brython_stdlib.js"> </script>
 		<script type ="text/javascript">
 			function pushVal(){
 				var aTag = document.getElementById("addTag").value;
@@ -75,15 +81,19 @@
 						console.log(addNewRes)
 					}
 				})
-				
 			}
 		</script>
-		<script type ="text/python" id ="script2">
-			from browser import document, ajax
-			from additional_functions import showQuery
-
-			showQuery()
-			document['genrep'].bind('click', showQuery
+		<script type ="text/javascript">
+			function generateRep() {
+				$.ajax({
+					url: "http://127.0.0.1:5000/getReport",
+					type: "GET",
+					contentType: "application.json",
+					context: document.body
+				}).done(function() {
+					alert("Generated");
+				});
+			}
 		</script>
 	</body>
 </html>

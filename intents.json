@@ -1,211 +1,205 @@
 {
-  "intents": [
-    {
-      "tag": "greetings",
-      "patterns": [
-        "Hi",
-        "Hey",
-        "Help",
-        "How are you",
-        "Is anyone there",
-        "Hello",
-        "Good day",
-        "Kamusta ka"
-      ],
-      "responses": [
-        "Hello, this is LAMPbot. How may I help you?"
-      ]
-    },
-    {
-      "tag": "email",
-      "patterns": [
-        "What email address should I use to log-in",
-        "What email address should I use to sign-in",
-        "What is my email address",
-        "What email should I use",
-        "What is my email"
-      ],
-      "responses": [
-        "The email address that you should use is your GC DOMAIN email with the format school_id_number@gordoncollege.edu.ph"
-      ]
-    },
-    {
-      "tag": "profile",
-      "patterns": [
-        "Can I update my profile",
-        "Is it possible to update my profile’",
-        "I want to know if I can update my profile",
-        "Can I change my profile",
-        "Is it possible to change my profile",
-        "I want to know if I can change my profile.",
-        "I want to change details in my profile.",
-        "How can I change my profile’",
-        "change profile"
-      ],
-      "responses": [
-        "You can update your profile by doing this:"
-      ]
-    },
-    {
-      "tag": "forgot_password",
-      "patterns": [
-        "I forgot my password. How can I change it ",
-        "I can’t remember my password.",
-        "How can I reset my forgotten password",
-        "Password can't remember."
-      ],
-      "responses": [
-        "Can't remember/forgot your password? Worry no more, you can still access your account. We will give you a New Generated Password for you to use to change your password. Here are the steps."
-      ]
-    },
-    {
-      "tag": "change_password",
-      "patterns": [
-        "Can I update my password",
-        "Is it possible to update my password",
-        "I want to know if I can update my password.",
-        "Can I change my password",
-        "Is it possible to change my password",
-        "I want to know if I can change my password",
-        "How can I update my password",
-        "I want to update my password",
-        "I want to change my password",
-        "How can I change my password",
-        "change password",
-        "password update"
-      ],
-      "responses": [
-        "If you want to change password, be sure to log-in first."
-      ]
-    },   
-    {
-      "tag": "class",
-      "patterns": [
-        "What is my class today", 
-        "Do I have a class today", "Is there classes"],
-      "responses": [
-        "If you want to know if you have classes today, then look at the uppermost right, there you can see the Date, then go to Classes and click the button on the upper right that says ‘Class Schedule’ with a calendar icon to check your schedule."
-      ]
-    },
-    {
-      "tag": "schedule",
-      "patterns": [
-        "Can I view the schedule",
-        "Can I see the schedule",
-        "What is my schedule",
-        "schedule"
-      ],
-      "responses": [
-        "You can view your schedule by following this:"
-      ]
-    },
-    {
-      "tag": "location",
-      "patterns": [
-        "Where is Gordon College located ",
-        "Where is Gordon College ",
-        "What is the college address ",
-        "What is the school address ",
-        "school location",
-        "college location"
-      ],
-      "responses": [
-        "Gordon College is located in Olongapo City Sports Complex, Gordon College, Philippines"
-      ]
-    },
-    {
-      "tag": "info",
-      "patterns": [
-        "Can you give me information about Gordon College ",
-        "Can you give me infos about Gordon College"
-      ],
-      "responses": [
-        "Gordon College, formerly known as Olongapo City Colleges, is a public educational institution established in 1999. The school is supervised by the City Government of Olongapo. The said college started out as a training center that helps workers in developing skills necessary for employment at the former United States Naval Base. When the facility closed down, it was later converted into a degree-granting institution. "
-      ]
-    },
-    {
-      "tag": "offers",
-      "patterns": [
-        "What programs does Gordon College offer ",
-        "Courses offered",
-        "programs offered"
-      ],
-      "responses": [
-        "Gordon College offers tertiary level programs. Degrees in the fields of Education, Nursing, Customs Administration, Accountancy, and Communication are open to students who are interested to pursue their education in the institution. Another offering is a senior high school program that features academic, arts and design, and technical-vocational-livelihood (TVL) strands"
-      ]
-    },
-    {
-      "tag": "foundation day",
-      "patterns": [
-        "When is the foundation day ",
-        "foundation day"
-      ],
-      "responses": [
-        "It is held on February 24 yearly."
-      ]
-
-    },
-    {
-      "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
-      "responses": [
-        "See you later, thanks for visiting",
-        "Have a nice day",
-        "Bye! Come back again soon."
-      ]
-    },
-    {
-      "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!", "Salamat !", "Maraming Salamat !"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
-    },
-    {
-      "tag" : "lamp_status",
-      "patterns" : [
-        "Is the GC-LAMP down ",
-        "Is the GC-LAMP up",
-        "I can't access GC-LAMP. Is it down",
-        "Is it down",
-        "Is it up",
-        "Is GC-LAMP accessible "
-      ],
-      "responses": [
-        "The GC-LAMP is"
-      ]
-    },
-    {
-      "tag" :"useful_links",
-      "patterns":[
-        "Can you send some useful links ",
-        "Can you provide some useful links ",
-        "Can you send GC-related links"
-      ],
-      "responses":[
-        "Useful links: "
-      ]
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
- ]
+    "intents": [
+        {
+            "patterns": [
+                "Hi",
+                "Hey",
+                "How are you",
+                "Is anyone there",
+                "Hello",
+                "Good day",
+                "Kamusta ka"
+            ],
+            "responses": [
+                "Hello, this is LAMPbot. How may I help you?",
+                "Hey, what's up. This is LAMPBot. How may I help you?"
+            ],
+            "tag": "greetings"
+        },
+        {
+            "patterns": [
+                "Sorry",
+                "My bad"
+            ],
+            "responses": [
+                "It's okay :)",
+                "Don't worry -- it's okay. Just type it again."
+            ],
+            "tag": "apology"
+        },
+        {
+            "patterns": [
+                "What email address should I use to log-in",
+                "What email address should I use to sign-in",
+                "What is my email address",
+                "What email should I use",
+                "What is my email"
+            ],
+            "responses": [
+                "The email address that you should use is your GC DOMAIN email with the format school_id_number@gordoncollege.edu.ph"
+            ],
+            "tag": "email"
+        },
+        {
+            "patterns": [
+                "Can I update my profile",
+                "Is it possible to update my profile",
+                "I want to know if I can update my profile",
+                "Can I change my profile",
+                "Is it possible to change my profile",
+                "I want to know if I can change my profile.",
+                "I want to change details in my profile.",
+                "How can I change my profile",
+                "change profile"
+            ],
+            "responses": [
+                "You can update your profile by doing this:"
+            ],
+            "tag": "profile"
+        },
+        {
+            "patterns": [
+                "I forgot my password. How can I change it ",
+                "I can't remember my password.",
+                "How can I reset my forgotten password",
+                "Password can't remember."
+            ],
+            "responses": [
+                "Can't remember/forgot your password? Worry no more, you can still access your account. We will give you a New Generated Password for you to use to change your password. Here are the steps."
+            ],
+            "tag": "forgot_password"
+        },
+        {
+            "patterns": [
+                "Can I update my password",
+                "Is it possible to update my password",
+                "I want to know if I can update my password.",
+                "Can I change my password",
+                "Is it possible to change my password",
+                "I want to know if I can change my password",
+                "How can I update my password",
+                "I want to update my password",
+                "I want to change my password",
+                "How can I change my password",
+                "change password",
+                "password update"
+            ],
+            "responses": [
+                "If you want to change password, be sure to log-in first."
+            ],
+            "tag": "change_password"
+        },
+        {
+            "patterns": [
+                "What is my class today",
+                "Do I have a class today",
+                "Is there classes"
+            ],
+            "responses": [
+                "If you want to know if you have classes today, then look at the uppermost right, there you can see the Date, then go to Classes and click the button on the upper right that says 'Class Schedule'with a calendar icon to check your schedule."
+            ],
+            "tag": "class"
+        },
+        {
+            "patterns": [
+                "Can I view the schedule",
+                "Can I see the schedule",
+                "What is my schedule",
+                "schedule"
+            ],
+            "responses": [
+                "You can view your schedule by following this:"
+            ],
+            "tag": "schedule"
+        },
+        {
+            "patterns": [
+                "Where is Gordon College located ",
+                "Where is Gordon College ",
+                "What is the college address ",
+                "What is the school address ",
+                "school location",
+                "college location"
+            ],
+            "responses": [
+                "Gordon College is located in Olongapo City Sports Complex, Gordon College, Philippines"
+            ],
+            "tag": "location"
+        },
+        {
+            "patterns": [
+                "Can you give me information about Gordon College ",
+                "Can you give me infos about Gordon College"
+            ],
+            "responses": [
+                "Gordon College, formerly known as Olongapo City Colleges, is a public educational institution established in 1999. The school is supervised by the City Government of Olongapo. The said college started out as a training center that helps workers in developing skills necessary for employment at the former United States Naval Base. When the facility closed down, it was later converted into a degree-granting institution. "
+            ],
+            "tag": "info"
+        },
+        {
+            "patterns": [
+                "What programs does Gordon College offer ",
+                "Courses offered",
+                "programs offered"
+            ],
+            "responses": [
+                "Gordon College offers tertiary level programs. Degrees in the fields of Education, Nursing, Customs Administration, Accountancy, and Communication are open to students who are interested to pursue their education in the institution. Another offering is a senior high school program that features academic, arts and design, and technical-vocational-livelihood (TVL) strands"
+            ],
+            "tag": "offers"
+        },
+        {
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye"
+            ],
+            "responses": [
+                "See you later, thanks for visiting",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ],
+            "tag": "goodbye"
+        },
+        {
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "Thats helpful",
+                "Thanks a lot!",
+                "Salamat !",
+                "Maraming Salamat !"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ],
+            "tag": "thanks"
+        },
+        {
+            "patterns": [
+                "Is the GC-LAMP down",
+                "Is the GC-LAMP up",
+                "I can't access GC-LAMP. Is it down",
+                "Is it down",
+                "Is it up",
+                "Is GC-LAMP accessible "
+            ],
+            "responses": [
+                "The GC-LAMP is"
+            ],
+            "tag": "lamp_status"
+        },
+        {
+            "patterns": [
+                "Can you send some useful links ",
+                "Can you provide some useful links ",
+                "Can you send GC-related links"
+            ],
+            "responses": [
+                "Useful links: "
+            ],
+            "tag": "useful_links"
+        }
+    ]
 }

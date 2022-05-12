@@ -265,8 +265,8 @@ hr {
 }
 
 .center {
-    width: 40%;
-    height: 700px;
+    width: 50%;
+    height: 750px;
     background-color: #ffffff;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -275,7 +275,7 @@ hr {
     
 }
 .left {
-    width: 35%;
+    width: 25%;
 }
 .right {
     width: 25%;
@@ -284,7 +284,7 @@ hr {
     padding-left: 20px;
 }
 textarea {
-    width: 80%;
+    width: 90%;
     height: 100px;
     padding: 12px 20px;
     box-sizing: border-box;

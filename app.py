@@ -6,7 +6,8 @@ from flask import Flask, json, render_template, request, jsonify
 from flask_cors	import CORS
 
 from chat import get_response
-from additional_functions import lamphost
+from additional_functions import lamphost, showQuery
+from additional_functions import write_json
 
 
 
@@ -22,30 +23,26 @@ def predict():
 	message = {"answer": response}
 	return jsonify(message)
 
-	
+
+@app.route("/getReport")
+def getReport():
+	showQuery()
+
+	return getReport
 @app.route('/uploadq', methods=['GET','POST'])
 def uploadq():
-	result = []
 	data = request.get_json()
 	tag = data['tag']
 	patterns = data['patterns']
 	responses = data['responses']
 
-	newRes = {"tag": tag, "patterns": patterns, "responses" : responses}
-	newRes_dumped = json.dumps(newRes)
-	newLine = ",\n"
-	print(newRes)
-	pos = 6038
-	with open('intents.json', 'r+') as f:
-		contents = f.read()
-		contents = contents[:pos] + newLine + str(newRes_dumped) + newLine + contents[pos + 1:]
-		f.seek(0)
-		f.truncate()
-		f.write(contents)
-	f.close()
+	newRes = {
+		"tag": tag, "patterns": patterns, "responses" : responses
+		}
+
+	write_json(newRes)
 	return newRes
 
 
 if __name__ == "__main__":
 	app.run(debug=False)
-	

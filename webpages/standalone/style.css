@@ -65,7 +65,7 @@ body {
 .send__button {
     padding: 10px 10px;
     width: 15%;
-    background: #00FF7F;
+    background: #000;
     border: solid;
     border-radius: 25px;
     outline: none;
@@ -297,7 +297,7 @@ textarea {
   }
 
   input {
-    background-color: #4CAF50; /* Green */
+    background-color: #fff; /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
