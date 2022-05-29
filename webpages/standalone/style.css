@@ -14,22 +14,42 @@
     --secondaryGradient: linear-gradient(268.91deg, #0166B3 -2.14%, #0a5b99 99.69%);
     --primaryBoxShadow: 1px 10px 15px rgba(0, 0, 0, 0.1);
     --secondaryBoxShadow: 1px -10px 15px rgba(0, 0, 0, 0.1);
-    --primary: #581B98;
+    --primary: #0a5b99;
 }
 
 body {
-    font-family: "Product Sans";
+    font-family: "Poppins";
     font-weight: 400;
     font-size: 100%;
-    background: url("images/bg.jpg");
+    background: linear-gradient(to right,#204D67, #70a7c6 );
+}
+
+.img-container{
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    margin-left: 15%;
+    
+    
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    margin-top: 100%;
+}
+
+#lampbot-title{
+    color: white;
+    font-weight: bold;
+    font-size: 50pt;
 }
 
 .container {
 	display: flex;
-    overflow: hidden;
     width: 100%;
-    height: 50%;
-	justify-content: center;
+    height: 100%;
+	
 }
 .chatbox {
     position: absolute;
@@ -44,18 +64,29 @@ body {
     background: #8b998e;
     width: 300px;
     height: 350px;
-    z-index: -123456;
     opacity: 1;
     transition: all .5s ease-in-out;
 }
 
 /* CONTENT ISOPEN */
 .chatbox--active {
-    transform: translateY(-40px);
-    z-index: 123456;    
-    opacity: 1;
-
+    margin-left: 10%;
+    padding-left: 10%;
+    width: 80%;    
 }
+
+.chatbox__support {
+    background: #CCE0F0;
+    height: 800px;
+    width: 90%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+}
+
 
 /* BUTTON */
 .chatbox__button {
@@ -64,16 +95,19 @@ body {
 
 .send__button {
     padding: 10px 10px;
-    width: 15%;
-    background: #000;
-    border: solid;
+    width: 17%;
+    background: black;
     border-radius: 25px;
     outline: none;
     cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
 }
-
-
-
+.send__button:hover{
+    background-color: white;
+    color: black;
+    
+}
 /* HEADER */
 .chatbox__header {
     position: sticky;
@@ -108,38 +142,31 @@ body {
     bottom: 1;
 }
 
-.chatbox__support {
-    background: #CCE0F0;
-    height: 800px;
-    width: 1000px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    overflow: hidden;
-}
-
 /* HEADER */
 .chatbox__header {
     background: var(--primaryGradient);
     display: flex;
     flex-direction: row;
-    align-items: center;
-
-    padding: 15px 20px;
+    padding: 3%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     box-shadow: var(--primaryBoxShadow);
 }
 
-.chatbox__image--header {
-    margin-right: 10px;
+.chatbox__image--header img{
+    height: 60px;
+    width: 70px;
+}
+
+.chatbox__content--header{
+    padding-top: 3%;
+    padding-left: 64%;
 }
 
 .chatbox__heading--header {
-    font-size: 1.2rem;
+    font-size: 17.1pt;
     color: white;
+    display: inline;
 }
 
 .chatbox__description--header {
@@ -216,36 +243,66 @@ body {
 
 .chatbox__suggestions {
     background-color: #CCE0F0;
-    display: flex;
+    display: inline;
+    padding-left:0% ;
+    
+    
 }
+
+.btn-container{
+    width: 23.5%;
+    float: left;
+    height: 20%;
+    margin-left: 1%;
+    padding-top: 1%;
+    transition: 0.3s;
+
+
+}
+.btn-container:hover{
+    padding-top: 0%;
+}
+
 .sgst1__btn {
     padding: 6px;
-    border:dotted 2px #41403E;
     border-radius: 25px;
-    outline: olive;
-    cursor:pointer
+    cursor:pointer;
+    width: 100%;
+    height: 50px;
+    transition: 0.3s;
 }
 .sgst2__btn {
     padding: 6px;
-    border:dotted 2px #41403E;
     border-radius: 25px;
-    outline: olive;
-    cursor:pointer
+    cursor:pointer;
+    width: 100%;
+    height: 50px;
+    transition: 0.3s;
+    
 }
 .sgst3__btn {
     padding: 6px;
-    border:dotted 2px #41403E;
     border-radius: 25px;
-    outline: olive;
-    cursor:pointer
+    cursor:pointer;
+    width: 100%;
+    height: 50px;
+    transition: 0.3s;
 }
 .sgst4__btn {
     padding: 6px;
-    border:dotted 2px #41403E;
-    border-radius: 25px;
-    outline: olive;
-    cursor:pointer
+    border-radius: 25px;    
+    cursor:pointer;
+    width: 100%;
+    height: 50px;
+    transition: 0.3s;
 }
+.sgst1__btn:hover, .sgst2__btn:hover, .sgst3__btn:hover, .sgst4__btn:hover{
+    background-color: #0a5b99;
+    color: white;
+    
+    
+}
+
 hr {
     clear: both;
     visibility: hidden;
@@ -299,7 +356,6 @@ textarea {
   input {
     background-color: #fff; /* Green */
     border: none;
-    color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;

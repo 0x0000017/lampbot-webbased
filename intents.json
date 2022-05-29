@@ -19,10 +19,11 @@
         {
             "patterns": [
                 "Sorry",
-                "My bad"
+                "My bad",
+                "pasensya"
             ],
             "responses": [
-                "It's okay :)",
+                "It's okay! No Worries",
                 "Don't worry -- it's okay. Just type it again."
             ],
             "tag": "apology"
@@ -93,12 +94,15 @@
             "patterns": [
                 "What is my class today",
                 "Do I have a class today",
-                "Is there classes"
+                "Is there classes",
+                "May class ba ako ngayon?"
+                
             ],
             "responses": [
                 "If you want to know if you have classes today, then look at the uppermost right, there you can see the Date, then go to Classes and click the button on the upper right that says 'Class Schedule'with a calendar icon to check your schedule."
             ],
             "tag": "class"
+            
         },
         {
             "patterns": [
@@ -172,7 +176,7 @@
             "responses": [
                 "Happy to help!",
                 "Any time!",
-                "My pleasure"
+                "My pleasure!"
             ],
             "tag": "thanks"
         },

@@ -1,5 +1,6 @@
 
 import sys
+import nltk
 
 from os import stat
 from flask import Flask, json, render_template, request, jsonify
@@ -9,7 +10,7 @@ from chat import get_response
 from additional_functions import lamphost, showQuery
 from additional_functions import write_json
 
-
+nltk.download('punkt')
 
 app = Flask(__name__)
 CORS(app)
@@ -45,4 +46,4 @@ def uploadq():
 
 
 if __name__ == "__main__":
-	app.run(debug=False)
+	app.run(debug=True)
